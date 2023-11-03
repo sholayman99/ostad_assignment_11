@@ -1,3 +1,7 @@
+import BgImage from "../components/BgImage";
+import Comments from "../components/Comments";
+
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 
@@ -5,7 +9,9 @@ const Service = () => {
     return (
         <div>
           <Navbar />
-          <h1>This is Service</h1>  
+          <BgImage />
+          <Comments />
+          <Footer /> 
         </div>
     );
 };

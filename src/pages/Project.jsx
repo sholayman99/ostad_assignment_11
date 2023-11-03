@@ -1,11 +1,18 @@
+
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Projects from "../components/Projects";
 
 
 const Project = () => {
+ 
     return (
         <div>
             <Navbar />
-            <h1>This is Project</h1>  
+            <Projects/>
+            <ContactForm />
+            <Footer /> 
         </div>
     );
 };
