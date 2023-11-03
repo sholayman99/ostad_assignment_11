@@ -1,9 +1,13 @@
+import BgImage from "../components/BgImage";
+import Navbar from "../components/Navbar";
 
 
 const Home = () => {
     return (
         <div>
-         Home   
+            <Navbar />
+            <BgImage />
+      
         </div>
     );
 };
