@@ -1,5 +1,8 @@
 import BgImage from "../components/BgImage";
+import Count from "../components/Count";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+
 
 
 const Home = () => {
@@ -7,7 +10,9 @@ const Home = () => {
         <div>
             <Navbar />
             <BgImage />
-      
+            <Count />
+            <Footer />
+        
         </div>
     );
 };
