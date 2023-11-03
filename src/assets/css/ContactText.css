@@ -1,0 +1,11 @@
+.con-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.con-container img{
+    height: 400px;
+    width: 450px;
+}

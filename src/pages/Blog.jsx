@@ -1,11 +1,16 @@
+import AboutUs from "../components/AboutUs";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Post from "../components/Post";
 
 
 const Blog = () => {
     return (
         <div>
           <Navbar />
-          <h1>This is Blog</h1>  
+          <Post />
+          <AboutUs />
+          <Footer />
         </div>
     );
 };

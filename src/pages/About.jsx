@@ -1,3 +1,6 @@
+import AboutUs from "../components/AboutUs";
+import ContactText from "../components/ContactText";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 
@@ -5,7 +8,9 @@ const About = () => {
     return (
         <div>
            <Navbar />
-           <h1>This is About</h1>  
+           <AboutUs />
+           <ContactText />
+           <Footer />
         </div>
     );
 };
