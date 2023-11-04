@@ -19,7 +19,7 @@ const Projects = () => {
         padding: "50px",
       }}
     >
-      {projectsData.map((p, index) => (
+      {projectsData.slice(0,15).map((p, index) => (
         <div style={{ border: "2px solid black", padding: "5px" , textAlign:"justify" }} key={index}>
           <p>Name:{p.firstname} </p>
           <p>Email:{p.email} </p>

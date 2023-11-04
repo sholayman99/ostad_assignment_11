@@ -1,25 +1,43 @@
-import { useEffect, useRef, useState } from "react";
-import "../assets/css/Count.css"
+import { useState, useRef } from "react";
 
 const Count = () => {
-  const [inputValue, setInputValue] = useState("");
-  const count = useRef(0);
+  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    count.current = count.current + 1;
-  });
+  const prevCountRef = useRef();
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  const decrementCount = () => {
+    setCount(count - 1);
+  };
+
+  // Store the current count value in the ref
+  prevCountRef.current = count;
+
   return (
-    <div className="count-container">
-      <h1>Play Count Game___</h1>
-      <p>
-        <input
-          type="text"
-          value={inputValue}
-          placeholder="Write Something"
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-      </p>
-      <h1>Render Count: {count.current}</h1>
+    <div style={{margin:"20px"}}>
+      <h2>Play Count Game__</h2>
+      <p>Count: {count}</p>
+      <p>Previous Count: {prevCountRef.current}</p>
+      <button style={{
+          backgroundColor: "rgb(9, 161, 166)",
+          border: "none",
+          padding: "4px 13px",
+          fontSize: "16px",
+          borderRadius:"3px",
+          color:"white"
+        }} onClick={incrementCount}>Increment</button>
+      <button style={{
+          backgroundColor: "rgb(0,0,0)",
+          border: "none",
+          padding: "4px 13px",
+          fontSize: "16px",
+          borderRadius:"3px",
+          color:"white",
+          margin:"2px"
+        }} onClick={decrementCount}>Decrement</button>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import AboutUs from "../components/AboutUs";
-import ContactText from "../components/ContactText";
 import Footer from "../components/Footer";
+import Mern from "../components/Mern";
 import Navbar from "../components/Navbar";
 
 
@@ -9,7 +9,7 @@ const About = () => {
         <div>
            <Navbar />
            <AboutUs />
-           <ContactText />
+           <Mern />
            <Footer />
         </div>
     );

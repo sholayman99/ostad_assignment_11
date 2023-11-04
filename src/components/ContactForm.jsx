@@ -51,7 +51,7 @@ const ContactForm = () => {
         ></textarea>
         <br />
         <br />
-        <input type="submit" value={"Submit"} />
+        <input style={{backgroundColor:"#26D078"}} type="submit" value={"Submit"} />
       </form>
     </div>
   );

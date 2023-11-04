@@ -1,18 +1,17 @@
-import AboutUs from "../components/AboutUs";
+import BlogBg from "../components/BlogBg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Post from "../components/Post";
 
-
 const Blog = () => {
-    return (
-        <div>
-          <Navbar />
-          <Post />
-          <AboutUs />
-          <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <BlogBg />
+      <Post />
+      <Footer />
+    </div>
+  );
 };
 
 export default Blog;

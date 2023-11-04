@@ -1,8 +1,8 @@
-
-import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ProjectBg from "../components/ProjectBg";
 import Projects from "../components/Projects";
+
 
 
 const Project = () => {
@@ -10,8 +10,8 @@ const Project = () => {
     return (
         <div>
             <Navbar />
-            <Projects/>
-            <ContactForm />
+            <ProjectBg />
+            <Projects/>           
             <Footer /> 
         </div>
     );
