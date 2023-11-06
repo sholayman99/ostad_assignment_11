@@ -2,7 +2,7 @@ const Mern = () => {
   return (
     <div style={{padding:"50px"}}>
       <h1>Why Should we learn MERN?</h1>
-      <h4 style={{textAlign:"justify"}} >
+      <p style={{textAlign:"justify"}} >
         The MERN stack is a colloquial name given the full stack JavaScript
         development framework consisting of MongoDB, Express.js, React, and
         Node.js. As a full stack framework, the MERN stack covers front end
@@ -35,7 +35,7 @@ const Mern = () => {
         stack web development skills. Learning the MERN stack will also let
         users take advantage of the functionalities of each framework for their
         non-full stack web development projects.
-      </h4>
+      </p>
     </div>
   );
 };
