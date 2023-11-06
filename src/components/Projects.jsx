@@ -1,33 +1,39 @@
-import { useEffect, useState } from "react";
+
 
 const Projects = () => {
-  const [projectsData, setProjectsData] = useState([]);
-
-  useEffect(() => {
-    (async () => {
-      let res = await fetch("https://jsonplaceholder.org/users");
-      let result = await res.json();
-      setProjectsData(result);
-    })();
-  }, []);
-  return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(3,1fr)",
-        gridGap: "20px",
-        padding: "50px",
-      }}
-    >
-      {projectsData.slice(0,15).map((p, index) => (
-        <div style={{ border: "2px solid black", padding: "5px" , textAlign:"justify" }} key={index}>
-          <p>Name:{p.firstname} </p>
-          <p>Email:{p.email} </p>
-          <p>BirthDate:{p.birthDate} </p>
-        </div>
-      ))}
+    const data = [
+        {
+            name:"Project 1",
+            details:"This is Project one."
+        },
+        {
+            name:"Project 2",
+            details:"This is Project two."
+        },
+        {
+            name:"Project 3",
+            details:"This is Project three."
+        },
+        {
+            name:"Project 4",
+            details:"This is Project four."
+        },
+    ]
+    return (
+        <div style={{display:"grid" , gridTemplateColumns:"repeat(4 ,1fr)" , padding:"20px"}} >
+        {
+            data.map((d,index) => <div style={{ textAlign:"center", gap:"10px",width:"250px" ,padding:"20px",
+             backgroundColor:"#1CC089" , color:"white"}} 
+            key={index} >
+               <h3> {d.name} </h3>
+               <p>{d.details} </p>
+               <button style={{padding: "8px 16px", backgroundColor: "blueviolet", border: "none",
+           color: "white",fontSize:"18px"
+        }}>Details</button>
+            </div>)
+        }
     </div>
-  );
+    );
 };
 
 export default Projects;
